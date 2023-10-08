@@ -1,9 +1,9 @@
-* {
-    margin: 0; /* zerar a margem de todos os elementos */
-    padding: 0; /* zerar o espaçamento interno de todos os elementos */
-    box-sizing: border-box; /* incluir padding e borda no cálculo do tamanho do elemento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 html::-webkit-scrollbar{
     width: 0.5rem;
 
@@ -17,76 +17,106 @@ html::-webkit-scrollbar-thumb{
     border-radius: 6rem;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
 
-header {
-    background-color: #5a1f55; /* cor de fundo */
-    color: #fff; /* cor do texto */
-    text-align: center; /* alinhamento centralizado */
-    padding-top: 20px; /* espaçamento interno superior */
-    padding-bottom: 20px; /* espaçamento interno inferior */
-    padding-left: 20px; /* espaçamento interno esquerdo */
-    padding-right: 20px; /* espaçamento interno direito */
-}
-
-header h1 {
-    margin-bottom: 10px; /* Define um espaçamento inferior */
-    margin-left: 100px;
-    margin-top: -5px;
-    float: left;
-}
-
-header {
-    background-color: #5d2761;
-    color: #fff;
+.menu {
+   
+    position: fixed;
     
-    /* assim (cima, baixo, esquerda, direita) */
-    /* padding: 20px 20px 20px 20px; */
-
-    /* ou 20px em todas as direções */
-    padding: 20px;
 }
 
 
 
 
-
-
-nav ul {
-    list-style: none; /* Remove a bolinha da lista */
+nav{
+    background-color: #6a1e96;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav li {
-    display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
-    margin-right: 20px; /* Define um espaçamento entre os itens */
-    padding: 4px 12px ;
+nav .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
 }
 
-nav a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #f3eded; /* Define a cor do texto */
-    font-weight: bold; /* Define o peso da fonte */
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
 }
 
-
-nav li {
-    transition: all 1s ease;
+nav li{
+    margin-left: 7px;
 }
 
-nav ul li:hover {
-    background-color: rgb(45, 5, 58);
-    border-radius: 12px;
-    padding: 4px 12px;
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
 
-    transition: all 1s ease;
 }
 
-nav ul li a:hover {
-    color: rgb(255, 255, 255);
-
-    transition: all 0.5s ease;
+nav li a:hover{
+    background-color: white;
+    color: black;
 }
 
+.banner{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('img/inicio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.texto .titulo{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.texto .sub_titulo{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.texto .subsub_titulo{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 6px;
+
+}
+
+.texto .botoes{
+    margin-top: 30px;
+}
+
+.texto .botoes button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+
+}
