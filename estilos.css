@@ -120,3 +120,8 @@ nav li a:hover{
     transition: 0.3s;
 
 }
+
+.crono {
+    color: white;
+    background-color: #6d2099a6;
+}

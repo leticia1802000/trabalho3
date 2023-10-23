@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="index.html">VIII-SCI</a>
+        </div>
+
+        <div id="menu">
+
+            <ul>
+                <li><a href="#"> Maratona</a></li>
+                <li><a href="#"> Jogos eletrônicos</a></li>
+                <li><a href="#"> Fotos</a></li>
+                <li><a href="#"> Cronograma</a></li>
+                <li><a href="#"> Inscreva-se</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</body>
+
+<form>
+    <fieldset>
+        <legend>Cadastro de Livros</legend>
+
+        <div class="input-container">
+            <label for="Aluno">Nome do Aluno</label>
+            <input type="text" name="Aluno" id="Aluno" placeholder="Seu nome" required autofocus>
+        </div>
+
+
+        <div class="input-container">
+            <label for="CPF">CPF</label>
+            <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF no formato: xxx.xxx.xxx-xx"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+        </div>
+
+        <div class="input-container">
+            <label for="Matricula">Numero de matricula</label>
+            <input type="text" name="Matricula" id="Matricula" placeholder="Seu numero de matricula" required>
+        </div>
+
+        <div class="input-container">
+            <label for="Turma">Turma</label>
+            <select name="Turma" id="Turma" required>
+                <option value="Info1-A">Info1-A</option>
+                <option value="Info1-B">Info1-B</option>
+                <option value="Info2-A">Info2-A</option>
+                <option value="Info2-B">Info2-B</option>
+                <option value="Info3-A">Info3-A</option>
+                <option value="Info3-B">Info3-B</option>
+
+            </select>
+        </div>
+
+        <div class="actions">
+            <button type="submit">Inscrever-se</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+
+
+    </fieldset>
+</form>
+
+</html>
