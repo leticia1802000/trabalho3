@@ -315,6 +315,7 @@ main {
     float: left;
     /* flutua o elemento para a esquerda */
     margin-top: 5%;
+    margin-bottom: 5%;
     
 }
 
@@ -328,4 +329,23 @@ main {
 .card:hover{
     transform: scale(1.1);
     transition: .5s;
+}
+
+#banner3{
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('img/codigo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.center1 {
+    text-align: center;
+    padding-bottom: 2%;
 }
