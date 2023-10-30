@@ -118,6 +118,7 @@ nav li a:hover{
     cursor: pointer;
     outline: none;
     transition: 0.3s;
+   
 
 }
 
@@ -192,7 +193,7 @@ input-container label {
     margin: 1%;
     transition: .3s;
     padding-left: 5%;
-    margin-left: 3%;
+    margin-left: 8%;
     
 }
 
@@ -296,7 +297,7 @@ input-container label {
 
 
 main {
-    padding: 20px;
+    padding: 60px;
     /* espaçamento interno */
     overflow: hidden;
     /* esconde o conteúdo que ultrapassa o tamanho do elemento */
@@ -332,7 +333,7 @@ main {
 }
 
 #banner3{
-    height: 50vh;
+    height: 40vh;
     background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('img/codigo1.jpg');
     background-size: cover;
     background-position: center;
@@ -341,11 +342,73 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 5%;
     
 
 }
+
+
 
 .center1 {
     text-align: center;
     padding-bottom: 2%;
 }
+
+
+#banner4{
+    height: 25vh;
+    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)), url('img/banner4s.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .esquerda {
+    text-align: left;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+} 
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer .direita {
+    text-align: right;
+}
+
+footer ul li a {
+color: white;
+font-size: 30px;
+}
+
+footer h1 {
+    color: white;
+}
+
+/* aaaaaa*/ 
+
+.carousel {
+    height: 500px;
+    margin: 0%;
+}
+.carousel img {
+    height: 500px;
+    object-fit: contain;
+}
+
