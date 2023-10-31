@@ -10,41 +10,6 @@
 
     <script>
 
-        function validarFormulario() {
-            // Obter os valores dos campos
-            var Aluno = document.getElementById('Aluno').value;
-            var email = document.getElementById('email').value;
-            var CPF = document.getElementById('CPF').value;
-            var Matricula = document.getElementById('Matricula').value;
-            var Turma = document.getElementById('Turma').value;
-
-            // Realizar a validação (adapte de acordo com suas regras)
-            if (Aluno.trim() === '' || email.trim() === '' || CPF.trim() === '' || Matricula.trim() === '' || Turma.trim() === '') {
-                alert('Por favor, preencha todos os campos.');
-                return false;
-            } incrementarInscritos();
-
-            // Exibir mensagem de sucesso
-            alert('Inscrição efetuada com sucesso!');
-            return true; // Permite o envio do formulário
-        }
-
-        function enviar(event) {
-            event.preventDefault();
-
-            var campoAluno = document.getElementById('Aluno');
-            var campoMatricula = document.getElementById('Matricula');
-            var campoCPF = document.getElementById('CPF');
-            var campoEmail = document.getElementById('email');
-            var campoTurma = document.getElementById('Turma');
-
-            if (campoAluno.value && campoMatricula.value && campoCPF.value && campoEmail.value && campoTurma.value) {
-                alert('formulario enviado com sucesso!')
-                local();
-            } else {
-                alert('você deve preencher todos os campos')
-            }
-        }
 
         function local() {
             if (!localStorage.getItem('total_inscritos')) {
@@ -82,7 +47,7 @@
     </nav>
 
     <section class="container">
-        <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" onsubmit="return validarFormulario()">
+        <form action="http://jkorpela.fi/cgi-bin/echo.cgi" onsubmit="return validarFormulario()">
             <fieldset>
                 <legend>Inscreva-se</legend>
 
@@ -95,12 +60,12 @@
                 <div class="input-container">
                     <label for="CPF">CPF</label>
                     <input type="text" name="CPF" id="CPF" placeholder=" xxx.xxx.xxx-xx"
-                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                    pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
                 </div>
 
                 <div class="input-container">
                     <label for="email">email</label>
-                    <input type="email" name="email" id="email" placeholder="email" required>
+                    <input type="email" name="email" id="email" placeholder="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})$" required>
                 </div>
 
                 <div class="input-container">
@@ -122,7 +87,7 @@
                 </div>
 
                 <div class="actions">
-                    <button onclick="enviar(event)">Cadastrar</button>
+                    <button type="submit" data-button >Cadastrar</button>
                     <button type="reset">Limpar</button>
                 </div>
 

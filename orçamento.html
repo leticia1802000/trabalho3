@@ -14,7 +14,6 @@
             imprimir(numero);
         }
 
-        
     </script>
 </head>
 
@@ -90,6 +89,7 @@
             <tr>
                 <th>Tipo</th>
                 <th>total</th>
+
             </tr>
             <tr>
                 <td>Alimentos</td>
@@ -98,6 +98,7 @@
             <tr>
                 <td>Divulgação</td>
                 <td><input type="text" readonly id="totaldivu"></td>
+
             </tr>
             <tr>
                 <td>Total</td>
@@ -105,12 +106,16 @@
             </tr>
         </table>
     </div>
+    
     <button input onclick="mult(), ali(), divu(), total()">Calcular</button>
-    <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/nkJtA1ewcj" method="POST">
-        <button onclick="textomontar()">montar o texto</button>
-        <input type="submit" value="Enviar">
+    <form action="https://api.headlessforms.cloud/api/v1/form/TmqQ0ch59B" id="calcForm" method="POST">
+        <input type="button" value="Montar Texto" onclick="textomontar()">
+        
         <textarea name="text" id="text" rows="25" cols="50"></textarea>
+        
+        <input type="submit" value="enviar">
     </form>
+    
 
 
 </body>

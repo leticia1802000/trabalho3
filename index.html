@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
     <title>Document</title>
 </head>
 
@@ -28,71 +29,63 @@
         </div>
 
     </nav>
-    <section class="banner">
-        <div class="texto">
-            <h1 class="titulo"> VIII-SCI</h1>
-            <h2 class="sub_titulo">Semana Academica de Computação e Informática</h2>
-            <h2 class="subsub_titulo">23 a 25 de outubro</h2>
-            <div class="botoes">
-                <button class="n-overlay">inscreva-se</button>
-                <button class="n-overlay">saiba mais</button>
+    <header>
+        <section class="banner">
+            <div class="texto">
+                <h1 class="titulo"> VIII-SCI</h1>
+                <h2 class="sub_titulo">Semana Academica de Computação e Informática</h2>
+                <h2 class="subsub_titulo">23 a 25 de outubro</h2>
+                <div class="botoes">
+                    <button class="n-overlay">inscreva-se</button>
+                    <button class="n-overlay">saiba mais</button>
 
-            </div>
-        </div>
-
-    </section>
-    <section class="center">
-        <h1>APOIADORES:</h1>
-    </section>
-
-    <section>
-        <div>
-
-            <div class="logo">
-                <a target="_blank" href="https://www.instagram.com/casa_do_computador/"><img src="img/kkkkkkk.png"
-                        width="300px" height="200px"></a>
+                </div>
             </div>
 
+        </section>
+        <section class="center">
+            <h1>APOIADORES:</h1>
+        </section>
+        <section>
+            <div>
+
+                <div class="logo">
+                    <a target="_blank" href="https://www.instagram.com/casa_do_computador/"><img src="img/kkkkkkk.png"
+                            width="300px" height="200px"></a>
+                </div>
 
 
-            <div class="logo">
-                <a target="_blank" href="https://www.instagram.com/inventario_itens_e_games/"><img
-                        src="img/inventario.png" width="300px"></a>
-            </div>
+
+                <div class="logo">
+                    <a target="_blank" href="https://www.instagram.com/inventario_itens_e_games/"><img
+                            src="img/inventario.png" width="300px"></a>
+                </div>
 
 
 
-            <div class="logo">
-                <a target="_blank" href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-videira/"><img
-                        src="img/centro de inovacao.png" width="300px" height="200px"></a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="banner2">
-        <div class="texto">
-            <h1 class="titulo"> FOTOS</h1>
-            <h2 class="sub_titulo">Venha ver como foi!</h2>
-            <h2 class="subsub_titulo"></h2>
-            <div class="botoes">
-                <button class="n-overlay"><a target="_blank"
-                        href="http://videira.ifc.edu.br/tecnico-informatica/sci-semana-academica-da-ciencia-da-computacao-e-informatica/">Fotos</a></button>
-
+                <div class="logo">
+                    <a target="_blank" href="http://centrosdeinovacao.sc.gov.br/centro-de-inovacao-de-videira/"><img
+                            src="img/centro de inovacao.png" width="300px" height="200px"></a>
+                </div>
 
             </div>
+        </section>
+        
+        <section id="banner2">
+            <div class="texto">
+                <h1 class="titulo"> FOTOS</h1>
+                <h2 class="sub_titulo">Venha ver como foi!</h2>
+                <h2 class="subsub_titulo"></h2>
+                <div class="botoes">
+                    <button class="n-overlay"><a target="_blank"
+                            href="http://videira.ifc.edu.br/tecnico-informatica/sci-semana-academica-da-ciencia-da-computacao-e-informatica/">Fotos</a></button>
 
-    </section>
 
-
-    <main>
-        <section id="cronograma"   class="center1">
+                </div>
+        </section>
+        <section id="cronograma" class="center1">
             <h1>CRONOGRAMA</h1>
         </section>
-
-
-
         <section class="cards">
 
             <div class="card">
@@ -114,26 +107,32 @@
                     eletrônicos, apresentações culturais e cosplay.</p>
 
             </div>
-        </section>
-    </main>
-    
-    <section id="banner3">
-        <div class="texto">
-            <h1 class="titulo"> MARATONA</h1>
-            <h2 class="sub_titulo">java script</h2>
-            <div class="botoes">
-                <button class="n-overlay"><a target="_blank"
-                        href="http://videira.ifc.edu.br/tecnico-informatica/sci-semana-academica-da-ciencia-da-computacao-e-informatica/">Fotos</a></button>
+        </section> 
 
 
+    </header>
+    <main>
+        <div class="banner3">
+        <section id="bannermara">
+            <div class="texto">
+                <h1 class="titulo"> MARATONA</h1>
+                <h2 class="sub_titulo">java script</h2>
+                <div class="botoes">
+                    <button class="n-overlay"><a target="_blank"
+                            href="http://videira.ifc.edu.br/tecnico-informatica/sci-semana-academica-da-ciencia-da-computacao-e-informatica/">Fotos</a></button>
+                </div>
             </div>
-
-           
-
-        
-    </section>
+        </section>
+    </div>
+        <div id="carousel"
+        data-flickity='{ "imagesLoaded": false, "percentPosition": false, "freeScroll": false, "wrapAround": true, "autoPlay": true }'>
+        <img src="https://img.zonared.com/images/noticias/portada/63000/63631-h.jpg" alt="">
+        <img src="https://img.zonared.com/images/noticias/portada/63000/63631-h.jpg" alt="">
+        <img src="https://img.zonared.com/images/noticias/portada/63000/63631-h.jpg" alt="">
+         </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    
-
+</main>
     <footer id="banner4">
         <div>
             <div class="col-3 esquerda">
