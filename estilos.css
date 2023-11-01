@@ -37,6 +37,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav .logo a {
@@ -51,6 +52,7 @@ nav ul {
     align-items: center;
     list-style: none;
     padding: 10px;
+    
 }
 
 nav li {
@@ -312,7 +314,7 @@ input-container label {
     margin: 1%;
     transition: .3s;
     padding-left: 5%;
-    margin-left: 34%;
+    margin-left: 3%;
 
 }
 
